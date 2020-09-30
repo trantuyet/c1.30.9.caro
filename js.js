@@ -145,7 +145,8 @@ function GameBoard(rows, cols, elementId) {
     this.endGame = function (count) {
         if(count >= 5){
             this.isOver = true;
-            alert("You won!!!");
+        setTimeout(function (){alert("You won!!!");},500)
+
         }
     };
 }
